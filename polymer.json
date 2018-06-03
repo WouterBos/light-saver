@@ -1,0 +1,18 @@
+{
+  "lint": {
+    "rules": [
+      "polymer-2"
+    ]
+  },
+  "sources": [
+    "src/**/*",
+    "media/**/*"
+  ],
+  "builds": [{
+    "name": "production",
+    "bundle": true,
+    "js": {"minify": true, "compile": true},
+    "css": {"minify": true},
+    "html": {"minify": true}
+  }]
+}

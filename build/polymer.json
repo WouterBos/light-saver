@@ -1,0 +1,33 @@
+{
+  "entrypoint": "index.html",
+  "fragments": [],
+  "sources": [
+    "src\\**\\*",
+    "media\\**\\*",
+    "index.html"
+  ],
+  "extraDependencies": [
+    "bower_components\\webcomponentsjs\\*.js"
+  ],
+  "builds": [
+    {
+      "name": "production",
+      "bundle": true,
+      "js": {
+        "minify": true,
+        "compile": true
+      },
+      "css": {
+        "minify": true
+      },
+      "html": {
+        "minify": true
+      }
+    }
+  ],
+  "lint": {
+    "rules": [
+      "polymer-2"
+    ]
+  }
+}

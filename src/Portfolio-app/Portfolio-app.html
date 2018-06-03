@@ -1,0 +1,51 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="./portfolio-header.html">
+<link rel="import" href="./portfolio-gallery.html">
+
+<dom-module id="portfolio-app">
+  <template>
+    <style>
+      :host {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1% 1fr;
+        grid-template-areas: "header" "gallery";
+        min-height: 99.99vh;
+      }
+
+      .grid portfolio-header {
+        grid-area: header;
+      }
+
+      .grid portfolio-gallery {
+        grid-area: gallery;
+        position: relative;
+      }
+    </style>
+
+    <portfolio-header></portfolio-header>
+    <portfolio-gallery></portfolio-gallery>
+    
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class PortfolioApp extends Polymer.Element {
+      static get is() { return 'portfolio-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'portfolio-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(PortfolioApp.is, PortfolioApp);
+  </script>
+</dom-module>
