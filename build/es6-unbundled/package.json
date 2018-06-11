@@ -1,0 +1,16 @@
+{
+  "name": "lightsaver",
+  "version": "3.0.0-pre.12",
+  "flat": true,
+  "description": "Light Saver website",
+  "main": "index.html",
+  "repository": "https://github.com/WouterBos/light-saver",
+  "author": "Wouter Bos",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0-pre.12",
+    "@webcomponents/webcomponentsjs": "^1.0.20"
+  },
+  "resolutions": {
+    "@webcomponents/webcomponentsjs": "1.0.20"
+  }
+}

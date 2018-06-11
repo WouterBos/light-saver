@@ -1,18 +1,14 @@
 {
-  "lint": {
-    "rules": [
-      "polymer-2"
-    ]
-  },
+  "npm": true,
+  "moduleResolution": "node",
   "sources": [
     "src/**/*",
-    "media/**/*"
+    "media/**/*",
+    ".surgeignore",
+    "package.json"
   ],
-  "builds": [{
-    "name": "production",
-    "bundle": true,
-    "js": {"minify": true, "compile": true},
-    "css": {"minify": true},
-    "html": {"minify": true}
-  }]
+  "extraDependencies": [
+    "node_modules/@webcomponents/webcomponentsjs/**/*"
+  ],
+  "builds": [{ "preset": "es6-unbundled" }]
 }
